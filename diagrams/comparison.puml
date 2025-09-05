@@ -1,0 +1,25 @@
+@startuml comparison
+skinparam monochrome true
+title Escolha: Manual vs Gusty vs dag-factory
+footer Disponível em: https://github.com/acnaweb/gusty
+
+start
+:'Quantos DAGs com padrão similar?';
+if (Dezenas+?) then (Sim)
+  if (Quer 1 YAML mestre para gerar N DAGs?) then (Sim)
+    :Usar dag-factory;
+    stop
+  else (Não)
+    :Usar Gusty;
+    stop
+  endif
+else (Não)
+  if (DAGs muito customizados/complexos?) then (Sim)
+    :Usar Manual (Python puro);
+    stop
+  else (Não)
+    :Usar Gusty (organização e YAML);
+    stop
+  endif
+endif
+@enduml
