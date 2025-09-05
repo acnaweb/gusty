@@ -91,3 +91,8 @@ Uso combinado de **DAGFactory** e **Gusty** para geração dinâmica de DAGs no 
   - O **DAGFactory** é ótimo para **configuração centralizada** em um único arquivo YAML.  
   - O **Gusty** é ótimo para **organização modular** de DAGs em pastas.  
   - Muitas equipes utilizam **ambos**: Gusty para modularizar etapas e DAGFactory para padronizar configurações globais.  
+
+
+  ## References
+
+  - https://github.com/pipeline-tools/gusty
